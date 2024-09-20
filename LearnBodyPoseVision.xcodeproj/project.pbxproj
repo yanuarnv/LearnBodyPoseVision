@@ -11,6 +11,11 @@
 		E45DD5872C97E7FF009D8B87 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45DD5862C97E7FF009D8B87 /* ContentView.swift */; };
 		E45DD5892C97E800009D8B87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E45DD5882C97E800009D8B87 /* Assets.xcassets */; };
 		E45DD58C2C97E800009D8B87 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E45DD58B2C97E800009D8B87 /* Preview Assets.xcassets */; };
+		E45DD5962C97E874009D8B87 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45DD5952C97E874009D8B87 /* HomeView.swift */; };
+		E45DD5992C97E913009D8B87 /* CameraManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45DD5982C97E913009D8B87 /* CameraManager.swift */; };
+		E45DD59B2C97F534009D8B87 /* BodyPoseProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45DD59A2C97F534009D8B87 /* BodyPoseProcessor.swift */; };
+		E45DD59E2C9805FD009D8B87 /* CameraUIPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45DD59D2C9805FD009D8B87 /* CameraUIPreview.swift */; };
+		E45DD5A02C9806A5009D8B87 /* SkeletonBodyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45DD59F2C9806A5009D8B87 /* SkeletonBodyView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +24,11 @@
 		E45DD5862C97E7FF009D8B87 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E45DD5882C97E800009D8B87 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E45DD58B2C97E800009D8B87 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E45DD5952C97E874009D8B87 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		E45DD5982C97E913009D8B87 /* CameraManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraManager.swift; sourceTree = "<group>"; };
+		E45DD59A2C97F534009D8B87 /* BodyPoseProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyPoseProcessor.swift; sourceTree = "<group>"; };
+		E45DD59D2C9805FD009D8B87 /* CameraUIPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraUIPreview.swift; sourceTree = "<group>"; };
+		E45DD59F2C9806A5009D8B87 /* SkeletonBodyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkeletonBodyView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +61,8 @@
 		E45DD5832C97E7FF009D8B87 /* LearnBodyPoseVision */ = {
 			isa = PBXGroup;
 			children = (
+				E45DD5972C97E901009D8B87 /* Manager */,
+				E45DD5922C97E839009D8B87 /* Presentation */,
 				E45DD5842C97E7FF009D8B87 /* LearnBodyPoseVisionApp.swift */,
 				E45DD5862C97E7FF009D8B87 /* ContentView.swift */,
 				E45DD5882C97E800009D8B87 /* Assets.xcassets */,
@@ -65,6 +77,33 @@
 				E45DD58B2C97E800009D8B87 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E45DD5922C97E839009D8B87 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				E45DD59C2C9805EE009D8B87 /* UIKit */,
+				E45DD5952C97E874009D8B87 /* HomeView.swift */,
+				E45DD59F2C9806A5009D8B87 /* SkeletonBodyView.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		E45DD5972C97E901009D8B87 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				E45DD5982C97E913009D8B87 /* CameraManager.swift */,
+				E45DD59A2C97F534009D8B87 /* BodyPoseProcessor.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		E45DD59C2C9805EE009D8B87 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				E45DD59D2C9805FD009D8B87 /* CameraUIPreview.swift */,
+			);
+			path = UIKit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +176,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E45DD5992C97E913009D8B87 /* CameraManager.swift in Sources */,
+				E45DD5A02C9806A5009D8B87 /* SkeletonBodyView.swift in Sources */,
+				E45DD5962C97E874009D8B87 /* HomeView.swift in Sources */,
+				E45DD59B2C97F534009D8B87 /* BodyPoseProcessor.swift in Sources */,
+				E45DD59E2C9805FD009D8B87 /* CameraUIPreview.swift in Sources */,
 				E45DD5872C97E7FF009D8B87 /* ContentView.swift in Sources */,
 				E45DD5852C97E7FF009D8B87 /* LearnBodyPoseVisionApp.swift in Sources */,
 			);
@@ -275,6 +319,7 @@
 				DEVELOPMENT_TEAM = 65D2HW9U9F;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "app using camera for detect your body";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -304,6 +349,7 @@
 				DEVELOPMENT_TEAM = 65D2HW9U9F;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "app using camera for detect your body";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
